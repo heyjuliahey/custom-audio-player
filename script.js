@@ -67,9 +67,6 @@ const currentTimeContainer = document.getElementById('current-time');
 audio.addEventListener('timeupdate', () => {
   seekSlider.value = Math.floor(audio.currentTime);
   currentTimeContainer.innerHTML = calculateTime(seekSlider.value);
-  console.log(seekSlider.value);
-  console.log(audio.currentTime);
-  console.log(currentTimeContainer.innerHTML);
 });
 
 const setSliderMax = () => {
@@ -86,13 +83,8 @@ const setSliderMax = () => {
       });
     }
 
-
-//event input is not working
-
-  
   audio.addEventListener('timeupdate', () => {
     seekSlider.value = Math.floor(audio.currentTime);
-    
   });
 
   const volumeSlider = document.getElementById('volume-slider');
