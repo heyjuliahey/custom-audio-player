@@ -12,12 +12,12 @@ playIconContainer.addEventListener('click', () => {
     if(playState === 'play') {
         audio.play();
         playState = 'pause';
-        playBtnImg.src = 'pause-btn.png';
+        playBtnImg.src = 'images/pause-btn.png';
     }
 
     else {
       audio.pause();
-      playBtnImg.src = 'play-btn.png';
+      playBtnImg.src = 'images/play-btn.png';
       playState = 'play';
     }
 });
@@ -25,12 +25,12 @@ playIconContainer.addEventListener('click', () => {
 soundIcon.addEventListener('click', () => {
     if(muteState === 'mute') {
         muteState = 'unmute';
-        soundBtnImg.src = 'custom audio player/mute.png';
+        soundBtnImg.src = 'images/mute.png';
         audio.muted = true;
     }
 
     else {
-      soundBtnImg.src = 'sound.png';
+      soundBtnImg.src = 'images/sound.png';
       muteState = 'mute';
       audio.muted = false;
     }
